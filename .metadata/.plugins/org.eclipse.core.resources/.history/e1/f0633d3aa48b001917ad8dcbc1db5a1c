@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<% java.sql.ResultSet geladeiras = (java.sql.ResultSet) request.getAttribute("geladeiras"); %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geladeiras</title>
+</head>
+<body>
+	<h1>Geladeiras</h1>	
+	
+	<div>
+		<% while(geladeiras.next()) { %>	
+			<ul>
+				<li>Modelo: <%= geladeiras.getString("modelo") %></li>
+				<li>Volume: <%= geladeiras.getString("volume") %></li>
+				<li>Quantidade de portas: <%= geladeiras.getString("numero_portas") %></li>
+				<li>Faz gelo?: <%= geladeiras.getString("faz_gelo") %></li>
+			</ul>
+		<% } %>
+	</div>
+</body>
+</html>

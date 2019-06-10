@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+/home/junior/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1366079252.index
+/lp4-a2/src
+/home/junior/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2506857955.index
+/lp4-a2/src
+/home/junior/eclipse-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2215209828.index
+/lp4-a2/src

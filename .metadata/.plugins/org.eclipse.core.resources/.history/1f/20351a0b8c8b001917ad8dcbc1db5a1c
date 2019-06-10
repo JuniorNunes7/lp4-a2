@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro de Geladeiras</title>
+</head>
+
+<body>
+    <h2>Formulario de Cadastro de Geladeiras</h2>
+    <form method="post" action="CadGeladeira.jsp">
+        Digite o modelo: <br>
+        <input type="text" name="modelo"> <br><br>
+
+        Digite o volume: <br>
+        <input type="text" name="volume"> <br><br>
+
+        Digite a quantidade de portas: <br>
+        <input type="text" name="numPortas"> <br><br>
+
+        Faz gelo? <br>
+        <input type="radio" id="sim" name="fazGelo" value="1">
+        <label for="sim">Sim</label>
+
+        <input type="radio" id="nao" name="fazGelo" value="0">
+        <label for="nao">Não</label>
+        
+        <br><br><br><br>
+
+        <input type="submit" value="Enviar"><br>
+        <br>
+        <input type="reset" value="Cancelar"><br>
+    </form>
+</body>
+</html>

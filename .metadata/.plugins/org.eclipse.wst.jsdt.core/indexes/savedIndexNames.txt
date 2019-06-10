@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+/home/junior/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1225660933.index
+3650095302.index
+1366079252.index
+2215209828.index
+3251255532.index
+1558878003.index
+2305683109.index
+2251501995.index

@@ -1,0 +1,16 @@
+package models;
+
+public class Geladeira {
+	
+	private String modelo;
+	private Integer volume;
+	private Integer numero_portas;
+	private Boolean faz_gelo;
+	
+	public Geladeira (String modelo, Integer volume, Integer numero_portas, Boolean faz_gelo) {
+		this.modelo = modelo;
+		this.volume = volume;
+		this.numero_portas = numero_portas;
+		this.faz_gelo = faz_gelo;
+	}
+}
