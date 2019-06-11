@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h2>Formulario de Cadastro de Geladeiras</h2>
+    <h2>Cadastro de Geladeiras</h2>
     <form method="post" action="/lp4-a2/geladeira">
         Digite o modelo: <br>
         <input type="text" name="modelo"> <br><br>

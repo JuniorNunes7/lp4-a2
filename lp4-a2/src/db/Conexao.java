@@ -14,7 +14,6 @@ public class Conexao {
     
     public Conexao () throws Exception {
     	try {
-    		// Setup the connection with the DB
 	    	Class.forName("com.mysql.cj.jdbc.Driver");
 	        connect = DriverManager
 	                .getConnection("jdbc:mysql://localhost:3306/lp4-a2", "root", "root");
@@ -25,10 +24,8 @@ public class Conexao {
 
     public ArrayList<Geladeira> getAll() throws Exception {
 		try {
-            // Statements allow to issue SQL queries to the database
             statement = this.connect.createStatement();
 
-            // Result set get the result of the SQL query
             resultSet = statement.executeQuery("select * from geladeiras");
             
             ArrayList<Geladeira> result = new ArrayList<Geladeira>();
@@ -52,7 +49,6 @@ public class Conexao {
     
     public void insert (Geladeira geladeira) throws Exception {
     	try {
-            // Statements allow to issue SQL queries to the database
     		preparedStatement = this.connect.prepareStatement("INSERT INTO geladeiras (modelo, volume, numero_portas, faz_gelo) VALUES (?,?,?,?)");
 
     		preparedStatement.setString(1, geladeira.getModelo());
@@ -67,7 +63,6 @@ public class Conexao {
         }
     }
 
-    // You need to close the resultSet
     public void close() {
         try {
             if (resultSet != null) {

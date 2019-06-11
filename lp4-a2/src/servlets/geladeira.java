@@ -24,16 +24,12 @@ public class geladeira extends HttpServlet {
      */
     public geladeira() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
 		try {
 			Conexao con = new Conexao();
 			ArrayList<Geladeira> result = con.getAll();
@@ -41,7 +37,6 @@ public class geladeira extends HttpServlet {
 
 			con.close();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -65,7 +60,6 @@ public class geladeira extends HttpServlet {
 			con.insert(geladeira);
 			con.close();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 		
